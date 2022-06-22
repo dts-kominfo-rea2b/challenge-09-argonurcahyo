@@ -2,12 +2,13 @@
 // Kalian bisa membuat CSS sendiri di src/components/Contact.css
 import React from "react";
 
-const Contact = ({ name, phone, email, photo }) => {
+const Contact = ({ data }) => {
+  const { name, email, phone, photo } = data;
   return (
     <>
-      <div style={{ display: "flex", "flex-direction": "row" }}>
-        <img src={photo} width="50px" alt="" />
-        <div style={{ display: "flex", "flex-direction": "column" }}>
+      <div key="email" style={{ display: "flex", flexDirection: "row" }}>
+        <img src={photo} width="50px" alt={name} />
+        <div style={{ display: "flex", flexDirection: "column" }}>
           <p>{name}</p>
           <p>{phone}</p>
           <p>{email}</p>

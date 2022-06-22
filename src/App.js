@@ -7,14 +7,10 @@ const App = () => {
   // Masukkan Header dan Contact ke dalam div App
 
   return (
-    <div className="App" style={{ display: "flex", 'flex-direction': "column" }}>
+    <div className="App" style={{ display: "flex", 'flexDirection': "column" }}>
       <Header />
-      {contacts.map((object, index) => {
-        return <Contact key={index}
-          name={object.name}
-          photo={object.photo}
-          email={object.email}
-          phone={object.phone}>
+      {contacts.map((contact) => {
+        return <Contact data={contact}>
         </Contact>
       })}
     </div>
