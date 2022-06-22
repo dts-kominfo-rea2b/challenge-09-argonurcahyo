@@ -3,7 +3,14 @@ import React from 'react';
 
 const Header = () => {
     return (
-        <></>
+        <>
+        <h1>
+            Call a Friend
+        </h1>
+        <h4>
+            your friendly contact app
+        </h4>
+        </>
     )
 }
 
